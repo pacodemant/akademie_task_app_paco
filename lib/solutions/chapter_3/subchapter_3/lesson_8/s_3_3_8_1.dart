@@ -4,7 +4,6 @@ int reverseNumber(int input) {
 String numberAsString = input.toString();
 String reversedString = numberAsString.split('').reversed.join('');
 return int.parse(reversedString);
-//return int.parse(reversedString);
 
 //!==========
  // throw UnimplementedError();
