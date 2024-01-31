@@ -2,7 +2,20 @@ import 'package:flutter/material.dart';
 
 bool isPrime(int input) {
   // Lösung hier einfügen
-  throw UnimplementedError();
+
+  if (input <= 1) {
+    return false; //  <=1 != Primzahlen
+  }
+
+  for (int i = 2; i <= (input / 2); i++) {
+    if (input % i == 0) {
+      return false; // durch i ohne Rest teilbar -> != Primzahl
+    }
+  }
+
+  return true; // keine Teiler gefunden -> == Primzahl
+
+//  throw UnimplementedError();
 }
 
 class S3382 extends StatefulWidget {
