@@ -21,7 +21,7 @@ void main() {
     test('aeiou has five vowels', () {
       expect(countVowels('aeiou'), 5);
     });
-    test('aeiouyAEIOUY has twelve vowels', () {
+    test('aeiouyAEIOUY has twelve vowels', () { //! 'aeiouyAEIOUY has twelve vowels' ist falsch, richtig wäre: TEN vowels 
       expect(countVowels('aeiouyAEIOUY'), 10);
     });
   });

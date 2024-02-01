@@ -11,7 +11,7 @@ void main() {
       ),
     );
 
-    final textFinder = find.text('Hello World');
+    final textFinder = find.text('Paco sagt "Hello World"');
     expect(textFinder, findsOneWidget);
   });
 }
