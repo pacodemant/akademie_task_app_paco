@@ -22,7 +22,7 @@ solution: S3384(),
   ),
   Task(
     taskModel: t_3_3_8_5,
-    // solution: S3385(),
+  solution: S3385(),
   ),
   Task(
     taskModel: t_3_3_8_6,
