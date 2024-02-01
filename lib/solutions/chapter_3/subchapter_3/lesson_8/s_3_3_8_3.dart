@@ -1,8 +1,18 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 
 FormattedTime formatSeconds(int seconds) {
   // Lösung hier einfügen
-  throw UnimplementedError();
+
+int minutes = seconds ~/ 60;
+  int hours = minutes ~/ 60;
+  int secondsRest = seconds % 60;
+  minutes = minutes % 60;
+  //! folgende Codezeile hat Dart empfohlen. 
+ return FormattedTime(hours: hours, minutes: minutes, seconds: seconds);
+
+//  throw UnimplementedError();
 }
 
 class FormattedTime {
