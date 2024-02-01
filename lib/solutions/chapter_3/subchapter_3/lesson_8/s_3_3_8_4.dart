@@ -2,7 +2,20 @@ import 'package:flutter/material.dart';
 
 int countVowels(String input) {
   // Lösung hier einfügen
-  throw UnimplementedError();
+    String charChain = input;
+  int numberVocals = 0;
+  String vocalChain = "aeiouäöü";
+  charChain = charChain.toLowerCase();
+  
+  for (int i = 0; i < charChain.length; i++) {
+    for (int j = 0; j < vocalChain.length; j++) {
+      if (charChain[i] == vocalChain[j]) {
+        numberVocals++;
+      }
+    }
+  }
+  return numberVocals;
+//   throw UnimplementedError();
 }
 
 class S3384 extends StatefulWidget {
