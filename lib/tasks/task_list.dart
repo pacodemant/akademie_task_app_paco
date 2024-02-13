@@ -76,11 +76,11 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_3_5,
-    //solution: S4535(),
+    solution: S4535(),
   ),
   Task(
     taskModel: t_4_5_3_6,
-    //solution: S4536(),
+    solution: S4536(),
   ),
 ];
 const List<Task> chapter5TaskList = [

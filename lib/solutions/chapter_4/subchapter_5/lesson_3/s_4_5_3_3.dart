@@ -8,7 +8,7 @@ class S4533 extends StatelessWidget {
       height: 150,
       width: 150,
       color: Colors.blue,
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [Text("App"), Text("Akademie")],
       ),
