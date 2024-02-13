@@ -71,9 +71,10 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
 }
 
 /// @nodoc
-abstract class _$$_TaskCopyWith<$Res> implements $TaskCopyWith<$Res> {
-  factory _$$_TaskCopyWith(_$_Task value, $Res Function(_$_Task) then) =
-      __$$_TaskCopyWithImpl<$Res>;
+abstract class _$$TaskImplCopyWith<$Res> implements $TaskCopyWith<$Res> {
+  factory _$$TaskImplCopyWith(
+          _$TaskImpl value, $Res Function(_$TaskImpl) then) =
+      __$$TaskImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({TaskModel taskModel, Widget? solution});
@@ -83,9 +84,10 @@ abstract class _$$_TaskCopyWith<$Res> implements $TaskCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res, _$_Task>
-    implements _$$_TaskCopyWith<$Res> {
-  __$$_TaskCopyWithImpl(_$_Task _value, $Res Function(_$_Task) _then)
+class __$$TaskImplCopyWithImpl<$Res>
+    extends _$TaskCopyWithImpl<$Res, _$TaskImpl>
+    implements _$$TaskImplCopyWith<$Res> {
+  __$$TaskImplCopyWithImpl(_$TaskImpl _value, $Res Function(_$TaskImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +96,7 @@ class __$$_TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res, _$_Task>
     Object? taskModel = null,
     Object? solution = freezed,
   }) {
-    return _then(_$_Task(
+    return _then(_$TaskImpl(
       taskModel: null == taskModel
           ? _value.taskModel
           : taskModel // ignore: cast_nullable_to_non_nullable
@@ -109,8 +111,8 @@ class __$$_TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res, _$_Task>
 
 /// @nodoc
 
-class _$_Task extends _Task {
-  const _$_Task({required this.taskModel, this.solution}) : super._();
+class _$TaskImpl extends _Task {
+  const _$TaskImpl({required this.taskModel, this.solution}) : super._();
 
   @override
   final TaskModel taskModel;
@@ -123,10 +125,10 @@ class _$_Task extends _Task {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Task &&
+            other is _$TaskImpl &&
             (identical(other.taskModel, taskModel) ||
                 other.taskModel == taskModel) &&
             (identical(other.solution, solution) ||
@@ -139,13 +141,14 @@ class _$_Task extends _Task {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_TaskCopyWith<_$_Task> get copyWith =>
-      __$$_TaskCopyWithImpl<_$_Task>(this, _$identity);
+  _$$TaskImplCopyWith<_$TaskImpl> get copyWith =>
+      __$$TaskImplCopyWithImpl<_$TaskImpl>(this, _$identity);
 }
 
 abstract class _Task extends Task {
   const factory _Task(
-      {required final TaskModel taskModel, final Widget? solution}) = _$_Task;
+      {required final TaskModel taskModel,
+      final Widget? solution}) = _$TaskImpl;
   const _Task._() : super._();
 
   @override
@@ -154,5 +157,6 @@ abstract class _Task extends Task {
   Widget? get solution;
   @override
   @JsonKey(ignore: true)
-  _$$_TaskCopyWith<_$_Task> get copyWith => throw _privateConstructorUsedError;
+  _$$TaskImplCopyWith<_$TaskImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

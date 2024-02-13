@@ -99,10 +99,11 @@ class _$TaskModelCopyWithImpl<$Res, $Val extends TaskModel>
 }
 
 /// @nodoc
-abstract class _$$_TaskModelCopyWith<$Res> implements $TaskModelCopyWith<$Res> {
-  factory _$$_TaskModelCopyWith(
-          _$_TaskModel value, $Res Function(_$_TaskModel) then) =
-      __$$_TaskModelCopyWithImpl<$Res>;
+abstract class _$$TaskModelImplCopyWith<$Res>
+    implements $TaskModelCopyWith<$Res> {
+  factory _$$TaskModelImplCopyWith(
+          _$TaskModelImpl value, $Res Function(_$TaskModelImpl) then) =
+      __$$TaskModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -116,11 +117,11 @@ abstract class _$$_TaskModelCopyWith<$Res> implements $TaskModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_TaskModelCopyWithImpl<$Res>
-    extends _$TaskModelCopyWithImpl<$Res, _$_TaskModel>
-    implements _$$_TaskModelCopyWith<$Res> {
-  __$$_TaskModelCopyWithImpl(
-      _$_TaskModel _value, $Res Function(_$_TaskModel) _then)
+class __$$TaskModelImplCopyWithImpl<$Res>
+    extends _$TaskModelCopyWithImpl<$Res, _$TaskModelImpl>
+    implements _$$TaskModelImplCopyWith<$Res> {
+  __$$TaskModelImplCopyWithImpl(
+      _$TaskModelImpl _value, $Res Function(_$TaskModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -134,7 +135,7 @@ class __$$_TaskModelCopyWithImpl<$Res>
     Object? taskText = null,
     Object? taskImagePath = freezed,
   }) {
-    return _then(_$_TaskModel(
+    return _then(_$TaskModelImpl(
       chapter: null == chapter
           ? _value.chapter
           : chapter // ignore: cast_nullable_to_non_nullable
@@ -169,8 +170,8 @@ class __$$_TaskModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TaskModel extends _TaskModel {
-  const _$_TaskModel(
+class _$TaskModelImpl extends _TaskModel {
+  const _$TaskModelImpl(
       {required this.chapter,
       required this.subChapter,
       required this.lesson,
@@ -201,10 +202,10 @@ class _$_TaskModel extends _TaskModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TaskModel &&
+            other is _$TaskModelImpl &&
             (identical(other.chapter, chapter) || other.chapter == chapter) &&
             (identical(other.subChapter, subChapter) ||
                 other.subChapter == subChapter) &&
@@ -226,8 +227,8 @@ class _$_TaskModel extends _TaskModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_TaskModelCopyWith<_$_TaskModel> get copyWith =>
-      __$$_TaskModelCopyWithImpl<_$_TaskModel>(this, _$identity);
+  _$$TaskModelImplCopyWith<_$TaskModelImpl> get copyWith =>
+      __$$TaskModelImplCopyWithImpl<_$TaskModelImpl>(this, _$identity);
 }
 
 abstract class _TaskModel extends TaskModel {
@@ -238,7 +239,7 @@ abstract class _TaskModel extends TaskModel {
       required final int taskNumber,
       required final String taskTitel,
       required final String taskText,
-      final String? taskImagePath}) = _$_TaskModel;
+      final String? taskImagePath}) = _$TaskModelImpl;
   const _TaskModel._() : super._();
 
   @override
@@ -257,6 +258,6 @@ abstract class _TaskModel extends TaskModel {
   String? get taskImagePath;
   @override
   @JsonKey(ignore: true)
-  _$$_TaskModelCopyWith<_$_TaskModel> get copyWith =>
+  _$$TaskModelImplCopyWith<_$TaskModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
