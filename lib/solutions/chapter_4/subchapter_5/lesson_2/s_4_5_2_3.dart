@@ -20,19 +20,20 @@ class MyNameWidget extends StatefulWidget {
 
 /// The following class is the state class for a widget named MyNameWidget.
 class _MyWidgetState extends State<MyNameWidget> {
-  String nameButton = ''; // Der Name sollte in der State-Klasse definiert sein
+  String textField = ''; // Der Name sollte in der State-Klasse definiert sein
+  String buttonText = 'Name anzeigen'; // Der Name sollte in der State-Klasse definiert sein
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(nameButton),
+        Text(textField),
         ElevatedButton(
           onPressed: () {
             // Zustandsänderung in einer separaten Funktion aufrufen
             _changeName();
           },
-          child: const Text("Name anzeigen"),
+          child:  Text(buttonText),
         ),
       ],
     );
@@ -41,7 +42,8 @@ class _MyWidgetState extends State<MyNameWidget> {
   // Funktion zum Ändern des Namens
   void _changeName() {
     setState(() {
-      nameButton = "Paco";
+      textField == "Paco" ? textField = "" : textField = "Paco";
+      buttonText == "Name anzeigen" ? buttonText = "Name ausblenden" : buttonText = "Name anzeigen";
     });
   }
 }
@@ -59,13 +61,13 @@ class MyNameWidget extends StatefulWidget {
 
 /// The following class is the state class for a widget named MyNameWidget.
 class _MyWidgetState extends State<MyNameWidget> {
-  String nameButton = ''; // Der Name sollte in der State-Klasse definiert sein
+  String textField = ''; // Der Name sollte in der State-Klasse definiert sein
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(nameButton),
+        Text(textField),
         ElevatedButton(
           onPressed: () {
             // Zustandsänderung in einer separaten Funktion aufrufen
@@ -80,7 +82,7 @@ class _MyWidgetState extends State<MyNameWidget> {
   // Funktion zum Ändern des Namens
   void _changeName() {
     setState(() {
-      nameButton = "Paco";
+      textField = "Paco";
     });
   }
 }
