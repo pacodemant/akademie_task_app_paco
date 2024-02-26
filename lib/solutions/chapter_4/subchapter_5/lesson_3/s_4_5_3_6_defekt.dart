@@ -41,6 +41,11 @@ class _MyProductListState extends State<MyProductList> {
 
     return ListView.builder(
       itemCount: 5,
+/// `shrinkWrap: true` im `ListView.builder` Widget wird verwendet, um die Listenansicht nur so groß wie
+/// ihre Kinder. Wenn `shrinkWrap` auf `true` gesetzt ist, wird die ListView ihre Größe anpassen, um ihren /// Inhalt zu umhüllen.
+/// Inhalt zu umschließen, was nützlich sein kann, wenn sich die ListView innerhalb eines anderen scrollbaren Widgets wie einem
+/// SingleChildScrollView oder einer Column befindet. Dies kann dabei helfen, unnötige Scrollkonflikte zu vermeiden und
+/// sicherzustellen, dass die ListView nur den notwendigen Platz einnimmt.
       shrinkWrap: true,
       itemBuilder: (context, index) {
         //Product product = productList[index];
@@ -48,12 +53,6 @@ class _MyProductListState extends State<MyProductList> {
           tileColor: Colors.deepOrange,
           titleAlignment: ListTileTitleAlignment.center,
           leading: const Icon(Icons.shopping_cart),
-          /*leading:
-            GestureDetector(onTap: () {
-            setState(() {
-              iconColor = Colors.red;
-            });
-          },) */
           iconColor: Colors.cyan,
           title: Text(
             productList[index].name,
