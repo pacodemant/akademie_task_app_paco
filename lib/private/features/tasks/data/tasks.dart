@@ -32,8 +32,7 @@ const TaskModel t_3_3_8_2 = TaskModel(
   lesson: 8,
   taskNumber: 2,
   taskTitel: "Prime Checker",
-  taskText:
-      """Erstelle eine Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist.
+  taskText: """Erstelle eine Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist.
 Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `bool` zurückgeben.
 Die Funktion soll `true` zurückgeben, wenn die Zahl eine Primzahl ist, ansonsten `false`.
 
@@ -67,8 +66,7 @@ const TaskModel t_3_3_8_4 = TaskModel(
   lesson: 8,
   taskNumber: 4,
   taskTitel: "Vowel Counter",
-  taskText:
-      """Erstelle eine Funktion, die die Anzahl der Vokale in einem gegebenen String zählt.
+  taskText: """Erstelle eine Funktion, die die Anzahl der Vokale in einem gegebenen String zählt.
 Die Funktion soll einen Parameter vom Typ `String` entgegennehmen und einen `int` zurückgeben.
 Die Funktion soll die Anzahl der Vokale im String zählen und zurückgeben.
 
@@ -85,8 +83,7 @@ const TaskModel t_3_3_8_5 = TaskModel(
   lesson: 8,
   taskNumber: 5,
   taskTitel: "Palindrome Checker",
-  taskText:
-      """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Palindrom ist.
+  taskText: """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Palindrom ist.
 Die Funktion soll einen Parameter vom Typ `String` entgegennehmen und einen `bool` zurückgeben.
 Die Funktion soll `true` zurückgeben, wenn der String ein Palindrom ist, ansonsten `false`.
 
@@ -104,8 +101,7 @@ const TaskModel t_3_3_8_6 = TaskModel(
   lesson: 8,
   taskNumber: 6,
   taskTitel: "Anagram Checker",
-  taskText:
-      """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Anagramm ist.
+  taskText: """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Anagramm ist.
 Die Funktion soll zwei Parameter vom Typ `String` entgegennehmen und einen `bool` zurückgeben.
 Die Funktion soll `true` zurückgeben, wenn die beiden Strings Anagramme sind, ansonsten `false`.
 
@@ -142,8 +138,7 @@ const TaskModel t_3_3_8_8 = TaskModel(
   lesson: 8,
   taskNumber: 8,
   taskTitel: "Multiply Advanced",
-  taskText:
-      """Erstelle eine Funktion, die 2 gegebene Zahlen miteinander multipliziert. 
+  taskText: """Erstelle eine Funktion, die 2 gegebene Zahlen miteinander multipliziert. 
 Du darfst dabei jedoch nicht den Operator der Multiplikation verwenden (`*`).
 
 **Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `multiplyAdvanced` implementieren.**
@@ -157,8 +152,7 @@ const TaskModel t_4_5_1_1 = TaskModel(
     lesson: 1,
     taskNumber: 1,
     taskTitel: "Hello World",
-    taskText:
-        """Implementiere ein Stateless Widget mit einem `Hello World`-Text-Widget.""");
+    taskText: """Implementiere ein Stateless Widget mit einem `Hello World`-Text-Widget.""");
 
 /// Hello World (zentriert)
 const TaskModel t_4_5_2_1 = TaskModel(
@@ -258,8 +252,7 @@ const TaskModel t_4_5_3_4 = TaskModel(
   lesson: 3,
   taskNumber: 4,
   taskTitel: "Space in Row",
-  taskText:
-      """Erstelle eine `Row` mit zwei `Text`-Elementen: `App` und `Akademie`.
+  taskText: """Erstelle eine `Row` mit zwei `Text`-Elementen: `App` und `Akademie`.
 Sorge für einen Abstand von 64 Einheiten zwischen den beiden Texten, ohne dafür einen `Container` zu verwenden.""", //da
 );
 
@@ -283,8 +276,7 @@ const TaskModel t_4_5_3_6 = TaskModel(
   lesson: 3,
   taskNumber: 6,
   taskTitel: "Shopping List",
-  taskText:
-      """Erstelle eine Klasse `Product` mit den Attributen `name` und `price`.
+  taskText: """Erstelle eine Klasse `Product` mit den Attributen `name` und `price`.
 Anschließend generiere eine Liste von mindestens fünf solchen Produkten.
 Implementiere dann eine `ListView`, die diese Produkte auflistet. Jedes Listenelement (vom Typ `ListTile`) in der `ListView` sollte den Namen und den Preis des jeweiligen Produkts enthalten und auf der linken Seite ein Einkaufswagen-Icon haben.
 
@@ -312,8 +304,7 @@ const TaskModel t_5_1_1_2 = TaskModel(
   lesson: 1,
   taskNumber: 2,
   taskTitel: "Style a Llama",
-  taskText:
-      """Rekonstruiere den Screen mit dem Lama aus dem `Arbeitsblatt 5.1.1 (Aufgabe 2)`.
+  taskText: """Rekonstruiere den Screen mit dem Lama aus dem `Arbeitsblatt 5.1.1 (Aufgabe 2)`.
 Nutze dazu ein beliebiges Bild eines Lamas, sowie beliebige Daten für den Steckbrief.
 Erstelle eine separate `styles`-Datei, in der du Konstanten für die Textstile und Abstände definierst.
 Verwende diese Konstanten dann in deinem Code, um Code-Duplikate zu vermeiden.""", //da
@@ -357,8 +348,7 @@ const TaskModel t_5_1_3_1 = TaskModel(
   lesson: 3,
   taskNumber: 1,
   taskTitel: "Google Fonts",
-  taskText:
-      """Wähle 4 beliebige Schriftarten aus `Google Fonts` aus und integriere sie.
+  taskText: """Wähle 4 beliebige Schriftarten aus `Google Fonts` aus und integriere sie.
 Ordne 4 `Text`-Widgets vertikal untereinander an und weise jedem `Text`-Widget eine der Schriftarten zu.""",
 );
 
@@ -369,8 +359,7 @@ const TaskModel t_5_1_3_2 = TaskModel(
   lesson: 3,
   taskNumber: 2,
   taskTitel: "Fold / Unfold Text",
-  taskText:
-      """Erstelle ein `Text`-Widget in einer `SizedBox`, die 200px breit und 30px hoch ist.
+  taskText: """Erstelle ein `Text`-Widget in einer `SizedBox`, die 200px breit und 30px hoch ist.
 Der Text sollte länger als die Box sein und deshalb nach unten hin den überlaufenden Text ausblenden.
 Integriere die Funktionalität, dass der Text sich bei einem Klick darauf ausklappt.""", //da
 );
@@ -428,8 +417,7 @@ const TaskModel t_5_3_2_1 = TaskModel(
   lesson: 2,
   taskNumber: 1,
   taskTitel: "Progress Indicator",
-  taskText:
-      """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
+  taskText: """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
 Zeige während des Ladevorgangs einen `CircularProgressIndicator`. Dabei soll der Progress Indicator den aktuellen Fortschritt anzeigen.""", //da
 );
 
@@ -440,8 +428,7 @@ const TaskModel t_5_3_2_2 = TaskModel(
   lesson: 2,
   taskNumber: 2,
   taskTitel: "Error Image",
-  taskText:
-      """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
+  taskText: """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
 Zeige bei einem Fehler ein alternatives Bild, einen `Text` oder ein `Icon` an.""", //da
 );
 
@@ -452,8 +439,7 @@ const TaskModel t_5_3_2_3 = TaskModel(
   lesson: 2,
   taskNumber: 3,
   taskTitel: "Shimmer Placeholder",
-  taskText:
-      """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
+  taskText: """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
 Zeige während des Ladevorgangs einen `Shimmer Effect` an.""", //da
 );
 
@@ -464,8 +450,7 @@ const TaskModel t_5_3_2_4 = TaskModel(
   lesson: 2,
   taskNumber: 4,
   taskTitel: "Thumbnail Image",
-  taskText:
-      """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
+  taskText: """Nutze ein `CachedNetworkImage` Widget, um ein Bild aus dem Internet anzuzeigen.
 Zeige während des Ladevorgangs ein `Thumbnail` an.""", //da
 );
 
@@ -476,8 +461,7 @@ const TaskModel t_5_3_3_1 = TaskModel(
   lesson: 3,
   taskNumber: 1,
   taskTitel: "Camera & Gallery",
-  taskText:
-      """Erstelle 2 `IconButtons`, die jeweils die Kamera und die Galerie öffnen.
+  taskText: """Erstelle 2 `IconButtons`, die jeweils die Kamera und die Galerie öffnen.
 Wähle entweder ein Bild aus der Galerie aus oder erstelle ein neues Bild mit der Kamera und zeige es anschließend unterhalb der `IconButtons` an.\nWenn erneut auf einen der IconButtons geklickt wird, soll das Bild aktualisiert werden.""", //da
 );
 
@@ -537,8 +521,7 @@ const TaskModel t_5_4_2_2 = TaskModel(
   lesson: 2,
   taskNumber: 2,
   taskTitel: "Custom Exception",
-  taskText:
-      """Erstelle ein `TextField` für das Alter des Users und darunter einen `TextButton`.
+  taskText: """Erstelle ein `TextField` für das Alter des Users und darunter einen `TextButton`.
 Bei einem Klick auf den Button soll das Alter des Users in eine Zahl umgewandelt werden.
 Dabei kann es zu einem Fehler kommen, wenn der User einen ungültigen Wert eingibt.
 Gib in diesem Fall die Fehlermeldung `Ungültiges Alter` in einer `SnackBar` aus.

@@ -86,15 +86,15 @@ const List<Task> chapter4TaskList = [
 const List<Task> chapter5TaskList = [
   Task(
     taskModel: t_5_1_1_1,
-    // solution: S5111(),
+     solution: S5111(),
   ),
   Task(
     taskModel: t_5_1_1_2,
-    // solution: S5112(),
+     solution: S5112(),
   ),
   Task(
     taskModel: t_5_1_1_3,
-    // solution: S5113(),
+     solution: S5113(),
   ),
   Task(
     taskModel: t_5_1_1_4,
@@ -102,11 +102,11 @@ const List<Task> chapter5TaskList = [
   ),
   Task(
     taskModel: t_5_1_3_1,
-    // solution: S5131(),
+     solution: S5131(),
   ),
   Task(
     taskModel: t_5_1_3_2,
-    // solution: S5132(),
+    solution: S5132(),
   ),
   Task(
     taskModel: t_5_1_3_3,
