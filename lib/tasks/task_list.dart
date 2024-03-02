@@ -6,23 +6,23 @@ import 'package:task_app/solutions/solutions.dart';
 const List<Task> chapter3TaskList = [
   Task(
     taskModel: t_3_3_8_1,
-  solution: S3381(),
+    solution: S3381(),
   ),
   Task(
     taskModel: t_3_3_8_2,
-  solution: S3382(),
+    solution: S3382(),
   ),
   Task(
     taskModel: t_3_3_8_3,
-   solution: S3383(),
+    solution: S3383(),
   ),
   Task(
     taskModel: t_3_3_8_4,
-solution: S3384(),
+    solution: S3384(),
   ),
   Task(
     taskModel: t_3_3_8_5,
-  solution: S3385(),
+    solution: S3385(),
   ),
   Task(
     taskModel: t_3_3_8_6,
@@ -40,11 +40,11 @@ solution: S3384(),
 const List<Task> chapter4TaskList = [
   Task(
     taskModel: t_4_5_1_1,
-  solution: S4511(),
+    solution: S4511(),
   ),
   Task(
     taskModel: t_4_5_2_1,
-  solution: S4521(),
+    solution: S4521(),
   ),
   Task(
     taskModel: t_4_5_2_2,
@@ -52,11 +52,11 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_2_3,
-     solution: S4523(),
+    solution: S4523(),
   ),
   Task(
     taskModel: t_4_5_2_4,
-     solution: S4524(),
+    solution: S4524(),
   ),
   Task(
     taskModel: t_4_5_3_1,
@@ -86,23 +86,23 @@ const List<Task> chapter4TaskList = [
 const List<Task> chapter5TaskList = [
   Task(
     taskModel: t_5_1_1_1,
-     solution: S5111(),
+    solution: S5111(),
   ),
   Task(
     taskModel: t_5_1_1_2,
-     solution: S5112(),
+    solution: S5112(),
   ),
   Task(
     taskModel: t_5_1_1_3,
-     solution: S5113(),
+    solution: S5113(),
   ),
   Task(
     taskModel: t_5_1_1_4,
-    // solution: S5114(),
+    solution: S5114(),
   ),
   Task(
     taskModel: t_5_1_3_1,
-     solution: S5131(),
+    solution: S5131(),
   ),
   Task(
     taskModel: t_5_1_3_2,
@@ -110,15 +110,15 @@ const List<Task> chapter5TaskList = [
   ),
   Task(
     taskModel: t_5_1_3_3,
-    // solution: S5133(),
+    solution: S5133(),
   ),
   Task(
     taskModel: t_5_3_1_1,
-    // solution: S5311(),
+    solution: S5311(),
   ),
   Task(
     taskModel: t_5_3_1_2,
-    // solution: S5312(),
+    solution: S5312(),
   ),
   Task(
     taskModel: t_5_3_1_3,
@@ -130,7 +130,7 @@ const List<Task> chapter5TaskList = [
   ),
   Task(
     taskModel: t_5_3_2_2,
-    // solution: S5322(),
+    solution: S5322(),
   ),
   Task(
     taskModel: t_5_3_2_3,

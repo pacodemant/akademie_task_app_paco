@@ -17,17 +17,21 @@ class CustomMaterialButton extends StatelessWidget {
     return InkWell(
       child: GestureDetector(
       //onTap: ,
-        child: Container(
-        
-          alignment: Alignment.center,
-          height: 50,
-          width: 150,
-          color: Colors.blue,
-          child: const Text(
-            'RippleButton',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
+        child: InkWell(onTap: () {
+          //TODO - 
+        },
+          child: Container(
+          
+            alignment: Alignment.center,
+            height: 50,
+            width: 150,
+            color: Colors.blue,
+            child: const Text(
+              'RippleButton',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),

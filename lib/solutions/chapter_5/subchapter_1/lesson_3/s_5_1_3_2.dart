@@ -20,29 +20,39 @@ class _FoldingUnfoldingTextState extends State<FoldingUnfoldingText> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: heightTextbox,
+      height: 60,
       width: 200,
       child: InkWell(
         onTap: () {
           // ignore: unused_local_variable, avoid_print
           print('Klick funzt');
-          _toggleButton();
+          _toggleClick();
         },
-        child: const Text(
-          'Click 2 fold out:\nErstelle ein `Text`-Widget in einer `SizedBox`, die 200px breit und 30px hoch ist. Der Text sollte länger als die Box sein und deshalb nach unten hin den überlaufenden Text ausblenden. Integriere die Funktionalität, dass der Text sich bei einem Klick darauf ausklappt.',
-          overflow: TextOverflow.fade,
+        child:  Text(
+          'fgsfh 2 fold out:\nErstelle ein `Text`-Widget in einer `SizedBox`, die 200px breit und 30px hoch ist. Der Text sollte länger als die Box sein und deshalb nach unten hin den überlaufenden Text ausblenden. Integriere die Funktionalität, dass der Text sich bei einem Klick darauf ausklappt.',
+          overflow: overflowMode,
         ),
       ),
     );
   }
 
-  double heightTextbox = 30;
+// für Lösung über die SizedBox-Höhe
+  double heightTextbox = 200;
+  // für Lösung über TextOverflow, wie im Test expected
+  // Der UI-Test läuft trotzdem nicht grün …
+  TextOverflow? overflowMode = TextOverflow.fade;
 
   // ignore: unused_element
-  void _toggleButton() {
+  void _toggleClick() {
     setState(
       () {
-        heightTextbox = heightTextbox == 30 ? 200 : 30;
+         overflowMode = overflowMode == TextOverflow.fade
+            ? TextOverflow.visible
+            : TextOverflow.fade;
+ 
+        //NOTE - ursprüngliche Lösung über die SizedBox-Höhe
+        // aber der UI-Test will was anderes
+        //heightTextbox = heightTextbox == 30 ? 200 : 30;
       },
     );
   }
