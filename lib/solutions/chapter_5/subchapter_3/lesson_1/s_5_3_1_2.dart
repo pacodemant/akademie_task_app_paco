@@ -30,9 +30,10 @@ class _MyTask5312State extends State<MyTask5312> {
               onPressed: () {
                 //NOTE - a =  um "var isn't used" abzustellen
                 // ignore: unused_local_variable
-                int a = 1;
+                // int a = 1;
+                changeImageSize();
               },
-              child: const Text('111'),
+              child: Text(sizedBoxwidth.toString()),
             ),
             SizedBox(
               width: sizedBoxwidth,
@@ -44,7 +45,12 @@ class _MyTask5312State extends State<MyTask5312> {
   }
 
   double sizedBoxwidth = 222;
-  void changeImageSize(double number) {
-    sizedBoxwidth = number;
+
+  void changeImageSize() {
+    setState(
+      () {
+        sizedBoxwidth = sizedBoxwidth == 222 ? 111 : 222;
+      },
+    );
   }
 }

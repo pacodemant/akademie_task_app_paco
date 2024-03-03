@@ -4,5 +4,16 @@
       "cSpell.words": [
             "paco",
             "Paco"
-      ]
+      ],
+      "workbench.editor.highlightModifiedTabs": true,
+      "editor.tabFocusMode": false,
+      "workbench.editor.pinnedTabsOnSeparateRow": true,
+      "workbench.editor.showTabs": "multiple",
+      "workbench.editor.tabActionLocation": "left",
+      "workbench.editor.tabSizing": "fit",
+      "workbench.editor.tabSizingFixedMaxWidth": 120,
+      "workbench.editor.wrapTabs": false,
+      "window.density.editorTabHeight": "compact",
+      "terminal.integrated.tabs.focusMode": "doubleClick",
+      "terminal.integrated.tabs.showActiveTerminal": "singleTerminal"
 }

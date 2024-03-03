@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class S5322 extends StatelessWidget {
@@ -14,7 +15,10 @@ class MyTask5322 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.network(
-        'https://i.pinimg.com/564x/25/98/fb/2598fb4fa14d7be609c034aaab141758.jpg');
+    return CachedNetworkImage(
+      imageUrl:
+          'https://i.pinimg.com/564x/25/98/fb/2598fb4fa14d7be609c034aaab141758.jpg',
+      errorWidget: (context, url, error) => const Icon(Icons.error),
+    );
   }
 }
