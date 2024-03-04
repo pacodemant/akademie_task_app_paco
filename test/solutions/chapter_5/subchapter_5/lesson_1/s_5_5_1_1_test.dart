@@ -28,5 +28,5 @@ void main() {
         containsNumber(widget) && (widget as Text).data!.contains('1'));
 
     expect(countersTextAfter, findsNWidgets(2));
-  });
+  },);
 }
