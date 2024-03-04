@@ -27,13 +27,9 @@ class _MyTask5511State extends State<MyTask5511> {
         Text(counter2V.toString()),
         ElevatedButton(
           onPressed: () async {
-            
             await counter1F();
-             await counter2F();
+            await counter2F();
             print('Ich habe fertick.');
-            setState(() {
-              null;
-            });
           },
           child: const Text('count up'),
         ),
@@ -47,14 +43,20 @@ class _MyTask5511State extends State<MyTask5511> {
 
 /* ------------------------- // zwei counter , verzögert ------------------------ */
   Future<void> counter1F() async {
-    await warteKurz(300);
+    await warteKurz(300); // simuliert Verzögerung
     counter1V++;
+    setState(() {
+      null;
+    });
     print('Methode 11111 inkrementiert. ');
   }
 
   Future<void> counter2F() async {
-    await warteKurz(600);
+    await warteKurz(1500);
     counter2V++;
+    setState(() {
+      null;
+    });
     print('Methode 22222 inkrementiert.');
   }
 
@@ -62,6 +64,6 @@ class _MyTask5511State extends State<MyTask5511> {
   // ignoriere für den Moment den Inhalt dieser Methode
   // nutze "await warteKurz();" in deinem Code, um einen Moment zu warten
   Future<void> warteKurz(int verzoegerung) {
-    return Future.delayed( Duration(milliseconds: verzoegerung));
+    return Future.delayed(Duration(milliseconds: verzoegerung));
   }
 }
